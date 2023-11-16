@@ -7,7 +7,7 @@ const Main = ({ blogs = [], onAddBlog }) => {
   return (
     <div>
       {blogs.map((blog, index) => (
-        <Card key={index} className='mt-3' style={{ width: '30rem', marginBottom: '20px' }}>
+        <Card key={index} className='mt-3' style={{ width: '100%', marginBottom: '20px' }}>
           <Card.Img variant="top" src={blog.image} />
           <Card.Body>
             <Card.Title>{blog.title}</Card.Title>
