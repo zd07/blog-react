@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <BootstrapNavbar bg="light" expand="lg">
       <BootstrapNavbar.Brand as={Link} to="/">
-        My React App
+        BLOG-WEB
       </BootstrapNavbar.Brand>
       <BootstrapNavbar.Toggle aria-controls="basic-navbar-nav" />
       <BootstrapNavbar.Collapse id="basic-navbar-nav">
@@ -19,7 +19,7 @@ const Navbar = () => {
             About
           </Nav.Link>
           <Nav.Link as={Link} to="/blog">
-            Blog
+           Add Blog
           </Nav.Link>
         </Nav>
       </BootstrapNavbar.Collapse>

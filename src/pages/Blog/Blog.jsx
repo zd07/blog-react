@@ -1,8 +1,15 @@
 import React from 'react'
-
-const Blog = () => {
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import AddBlog from '../../components/Addblog';
+const Blog = ( { blogs, onAddBlog }) => {
   return (
-    <div>Blog</div>
+    <Container>
+      <Row className="justify-content-md-center">
+        <Col xs={6} md="auto"><AddBlog onAddBlog={onAddBlog} /></Col>
+      </Row>
+    </Container>
   )
 }
 
